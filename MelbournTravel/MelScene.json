@@ -1,0 +1,79 @@
+{
+    "file_name": "MelScene.json",
+    "file_format": "JSON",
+    "description": "The Attractions list of Melbourne",
+    "version": 1,
+    "update_date": "2014-04-04 17:29:41",
+    "Scene list": [
+                   {
+                   "id": "1",
+                   "name": "12 Apostles",
+                   "brief": "A paradise resort untouched by human development, the Queen Bay presents the last virgin land for explorers. Visitors can indulge themselves in the sandy beach, crystal clear water, enjoy a mouthful of tropical fruits freshly picked from the lush tropical rainforest, embark on a sea or rock fishing trip to catch some fresh material for dinner, or go for snorkeling to see the intact beautiful coral and swim with tropical fish. ",
+                   "traffic": "Queen Bay is located at the southernmost tip of Haitang Bay in Sanya",
+                   "scene_level": "",
+                   "ticket": "",
+                   "open_hour": "09:00-17:00",
+                   "gps_lati": "18.270108",
+                   "gps_long": "109.726081",
+                   "tag": "Natural beauty",
+                   "360link": "https://www.flickr.com/photos/95649064@N06/13613362544/",
+                   "recommend": ""
+                   },
+                   {
+                   "id": "2",
+                   "name": "Loch Ard",
+                   "brief": "The Niuche Bay used to be a military outstation and has become another summer resort in Hainan. The crescent-shaped bay resembles the stunning Yalong Bay with reefs densely dotting both ends of the bay. In the crystal clear water ranging  from 6 to 15 meters in depth inhabit beautiful coral reefs of varied types and shapes and all sorts of marine life. The 1,700 meter sandy beach provides the perfect venue for recreational activities. Visitors can go for water sports such as scuba diving, snorkeling, or just enjoy a fun beachside party with outdoor barbecue and bar. ",
+                   "traffic": "30 km east of Sanya City",
+                   "scene_level": "",
+                   "ticket": " FREE",
+                   "open_hour": "All Day",
+                   "gps_lati": "18.246959",
+                   "gps_long": "109.745007",
+                   "tag": "Recreation",
+                   "360link": "https://www.flickr.com/photos/95649064@N06/13613012365/",
+                   "recommend": ""
+                   },
+                   {
+                   "id": "3",
+                   "name": "Penguins",
+                   "brief": "Unlike Yalong and Dadonghai bays, Haitang Bay is still full of pristine beauty. Far away from the city, the bay boasts 19 km of stunning sandy beach along the coastline completed with a vast network of watercourse and wetlands. Bordering the Yalong Bay resort to the south, Haitang Bay is also rich in natural resources such as seawater, beaches, hot springs, islands and wetlands, as well as numerous cultural relics.",
+                   "traffic": "Located 28 km east of Sanya City and 45 minutes from Sanya.\n\nTake Bus 23 from Haiyue Square and it takes about one hour on the road. Bus fare: 7 kuai.",
+                   "scene_level": "",
+                   "ticket": "",
+                   "open_hour": "08:00-18:00",
+                   "gps_lati": "18.315092",
+                   "gps_long": "109.742775",
+                   "tag": "Animal",
+                   "360link": "https://www.flickr.com/photos/95649064@N06/13613457924/",
+                   "recommend": ""
+                   },
+                   {
+                   "id": "4",
+                   "name": "Phillip Island",
+                   "brief": "Sanya Bay is only a stone’s throw away from the downtown area of Sanya. Stretching from Sanya Harbor and Phoenix Island to Tianya Bay, it is about 22 kilometers long. The eastern part of the Sanya bay is the south edge of Sanya downtown area. This part of the beach is a best place for local people to have morning exercises and dancing practice at nights because there are several squares or gardens in this part. It is also suitable for taking a casual stroll along the beach with a pair of slippers in the morning or at the evening for the local people or tourists who want to have fun on beach and enjoy the convenience of being close to dynamic downtown life. Along the western part of Sanya bay lies the 17.8-kilometer Palm Tree Dream Avenue. On one side of the avenue is the area for star-rated hotels and modern beach-front residential blocks. On the other side of the avenue is the dream-like palm-fringed beach which is not as crowded as the beaches in Dadonghai Bay or Yalong Bay. You can also have a swim light-heartedly here in the save area in the sea marked by the star-rated hotels nearby",
+                   "traffic": "Sanya City",
+                   "scene_level": "",
+                   "ticket": " FREE",
+                   "open_hour": "All Day",
+                   "gps_lati": "18.282333",
+                   "gps_long": "109.459705",
+                   "tag": "Natural beauty",
+                   "360link": "https://www.flickr.com/photos/95649064@N06/13613115023/",
+                   "recommend": ""
+                   },
+                   {
+                   "id": "5",
+                   "name": "Yalong Range",
+                   "brief": "Covering an area of 1,506 hectares, the Yalong Bay Tropical Paradise Forest Park surrounds the Yalongwan National Tourist Resort with its east and west parks. Dominated by a tropical climate, the park is covered with tropical evergreen forests and seasonal semi-deciduous forests. Also rich in astronomical phenomena, hydrological and cultural resources, the park is regarded as a world-class eco-tourism and eco-resort forest park. The park is a natural forest oxygen bar closest to city. As a land of varied topography, the park can host a large variety of tourism activities such as mountaineering expedition, field expansion, leisure and tourism, health resort, popular science education, and folk culture experience. ",
+                   "traffic": "Located 25 kilometers away from Sanya",
+                   "scene_level": "",
+                   "ticket": "",
+                   "open_hour": "07:30-18:00",
+                   "gps_lati": "18.249079",
+                   "gps_long": "109.624586",
+                   "tag": "Safari",
+                   "360link": "https://www.flickr.com/photos/95649064@N06/9443256020/",
+                   "recommend": ""
+                   }
+                   ]
+}
