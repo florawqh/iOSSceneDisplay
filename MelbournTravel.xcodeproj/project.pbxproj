@@ -14,8 +14,6 @@
 		6DA1A0BD18EE398D0002EBD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1A0BC18EE398D0002EBD2 /* main.m */; };
 		6DA1A0C118EE398D0002EBD2 /* MelTravelAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1A0C018EE398D0002EBD2 /* MelTravelAppDelegate.m */; };
 		6DA1A0C418EE398D0002EBD2 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA1A0C218EE398D0002EBD2 /* Main_iPhone.storyboard */; };
-		6DA1A0C718EE398D0002EBD2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA1A0C518EE398D0002EBD2 /* Main_iPad.storyboard */; };
-		6DA1A0CA18EE398D0002EBD2 /* MelTravelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1A0C918EE398D0002EBD2 /* MelTravelViewController.m */; };
 		6DA1A0CC18EE398D0002EBD2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA1A0CB18EE398D0002EBD2 /* Images.xcassets */; };
 		6DA1A0D318EE398E0002EBD2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA1A0D218EE398E0002EBD2 /* XCTest.framework */; };
 		6DA1A0D418EE398E0002EBD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA1A0B018EE398D0002EBD2 /* Foundation.framework */; };
@@ -27,6 +25,7 @@
 		6DA1A0F018EE4E8E0002EBD2 /* SceneDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1A0EF18EE4E8E0002EBD2 /* SceneDetailViewController.m */; };
 		6DA1A0F218EE662B0002EBD2 /* MelScene.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DA1A0F118EE662B0002EBD2 /* MelScene.json */; };
 		6DA1A0F618EE6A180002EBD2 /* DataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1A0F518EE6A180002EBD2 /* DataParser.m */; };
+		6DA1A0FF18EFC9630002EBD2 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1A0FE18EFC9630002EBD2 /* NavController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,9 +50,6 @@
 		6DA1A0BF18EE398D0002EBD2 /* MelTravelAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MelTravelAppDelegate.h; sourceTree = "<group>"; };
 		6DA1A0C018EE398D0002EBD2 /* MelTravelAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MelTravelAppDelegate.m; sourceTree = "<group>"; };
 		6DA1A0C318EE398D0002EBD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		6DA1A0C618EE398D0002EBD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		6DA1A0C818EE398D0002EBD2 /* MelTravelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MelTravelViewController.h; sourceTree = "<group>"; };
-		6DA1A0C918EE398D0002EBD2 /* MelTravelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MelTravelViewController.m; sourceTree = "<group>"; };
 		6DA1A0CB18EE398D0002EBD2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6DA1A0D118EE398E0002EBD2 /* MelbournTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelbournTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA1A0D218EE398E0002EBD2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -69,6 +65,8 @@
 		6DA1A0F118EE662B0002EBD2 /* MelScene.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MelScene.json; sourceTree = "<group>"; };
 		6DA1A0F418EE6A180002EBD2 /* DataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataParser.h; path = DATA/DataParser.h; sourceTree = "<group>"; };
 		6DA1A0F518EE6A180002EBD2 /* DataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataParser.m; path = DATA/DataParser.m; sourceTree = "<group>"; };
+		6DA1A0FD18EFC9630002EBD2 /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
+		6DA1A0FE18EFC9630002EBD2 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,15 +127,12 @@
 			isa = PBXGroup;
 			children = (
 				6DA1A0C218EE398D0002EBD2 /* Main_iPhone.storyboard */,
-				6DA1A0EE18EE4E8E0002EBD2 /* SceneDetailViewController.h */,
-				6DA1A0EF18EE4E8E0002EBD2 /* SceneDetailViewController.m */,
 				6DA1A0E818EE3DF80002EBD2 /* MelTravelTableViewController.h */,
 				6DA1A0E918EE3DF80002EBD2 /* MelTravelTableViewController.m */,
 				6DA1A0EB18EE3F850002EBD2 /* SceneTableViewController.h */,
 				6DA1A0EC18EE3F850002EBD2 /* SceneTableViewController.m */,
-				6DA1A0C518EE398D0002EBD2 /* Main_iPad.storyboard */,
-				6DA1A0C818EE398D0002EBD2 /* MelTravelViewController.h */,
-				6DA1A0C918EE398D0002EBD2 /* MelTravelViewController.m */,
+				6DA1A0EE18EE4E8E0002EBD2 /* SceneDetailViewController.h */,
+				6DA1A0EF18EE4E8E0002EBD2 /* SceneDetailViewController.m */,
 				6DA1A0CB18EE398D0002EBD2 /* Images.xcassets */,
 				6DA1A0F318EE677A0002EBD2 /* Data */,
 				6DA1A0B718EE398D0002EBD2 /* Supporting Files */,
@@ -154,6 +149,8 @@
 				6DA1A0B918EE398D0002EBD2 /* InfoPlist.strings */,
 				6DA1A0BC18EE398D0002EBD2 /* main.m */,
 				6DA1A0BE18EE398D0002EBD2 /* MelbournTravel-Prefix.pch */,
+				6DA1A0FD18EFC9630002EBD2 /* NavController.h */,
+				6DA1A0FE18EFC9630002EBD2 /* NavController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -263,7 +260,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DA1A0C718EE398D0002EBD2 /* Main_iPad.storyboard in Resources */,
 				6DA1A0CC18EE398D0002EBD2 /* Images.xcassets in Resources */,
 				6DA1A0C418EE398D0002EBD2 /* Main_iPhone.storyboard in Resources */,
 				6DA1A0BB18EE398D0002EBD2 /* InfoPlist.strings in Resources */,
@@ -289,9 +285,9 @@
 				6DA1A0F018EE4E8E0002EBD2 /* SceneDetailViewController.m in Sources */,
 				6DA1A0EA18EE3DF80002EBD2 /* MelTravelTableViewController.m in Sources */,
 				6DA1A0BD18EE398D0002EBD2 /* main.m in Sources */,
+				6DA1A0FF18EFC9630002EBD2 /* NavController.m in Sources */,
 				6DA1A0F618EE6A180002EBD2 /* DataParser.m in Sources */,
 				6DA1A0ED18EE3F850002EBD2 /* SceneTableViewController.m in Sources */,
-				6DA1A0CA18EE398D0002EBD2 /* MelTravelViewController.m in Sources */,
 				6DA1A0C118EE398D0002EBD2 /* MelTravelAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,14 +325,6 @@
 				6DA1A0C318EE398D0002EBD2 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		6DA1A0C518EE398D0002EBD2 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6DA1A0C618EE398D0002EBD2 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		6DA1A0DB18EE398E0002EBD2 /* InfoPlist.strings */ = {
@@ -434,6 +422,7 @@
 				GCC_PREFIX_HEADER = "MelbournTravel/MelbournTravel-Prefix.pch";
 				INFOPLIST_FILE = "MelbournTravel/MelbournTravel-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -448,6 +437,7 @@
 				GCC_PREFIX_HEADER = "MelbournTravel/MelbournTravel-Prefix.pch";
 				INFOPLIST_FILE = "MelbournTravel/MelbournTravel-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

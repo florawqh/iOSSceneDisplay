@@ -5,7 +5,7 @@
 //  Created by WangQionghua on 4/04/2014.
 //  Copyright (c) 2014 WangQionghua. All rights reserved.
 //
-
+//https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-prn1/t1.0-9/p417x417/534099_10152076227342054_812945626_n.jpg
 #import <Foundation/Foundation.h>
 
 // key (paths) to attractions at scene list
@@ -17,7 +17,9 @@
 #define SCENE_DESCRIPTION @"brief"
 #define SCENE_TAG @"tag"
 #define SCENE_LINK @"360link" // Storaged some sample photos on Flickr
-
+#define SCENE_OPEN_HOUR @"open_hour"
+#define SCENE_TICKET @"ticket"
+#define SCENE_PHONE @"phone"
 //Define Data Source type--from internet:DS_NETWORK or from local json file:DS_LOCAL_FILE
 // The data Source of the app for initialization.
 enum {

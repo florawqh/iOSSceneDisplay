@@ -7,9 +7,11 @@
 //  This Class is used to process Data source from json file.
 
 #import "DataParser.h"
+//Sington instance
 static DataParser *model=nil;
+
 @implementation DataParser
-#pragma mark - Data initialization.
+
 +(id)shareInstance
 {
     @synchronized([DataParser class])
@@ -20,10 +22,9 @@ static DataParser *model=nil;
         }
         return model;
     }
-    
     return nil;
 }
-
+#pragma mark - Data initialization.
 -(void) initData
 {
     [self initAllDestinationData:APP_INIT_DATASOURCE];
