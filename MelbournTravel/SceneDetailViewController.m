@@ -13,7 +13,7 @@
 @property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) IBOutlet UITextView *textView;
-@property (weak, nonatomic) IBOutlet UIButton *checkPhotoButton;
+//@property (weak, nonatomic) IBOutlet UIButton *checkPhotoButton; //segue to browse images
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 @end
 

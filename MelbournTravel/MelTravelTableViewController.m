@@ -8,6 +8,7 @@
 
 #import "MelTravelTableViewController.h"
 #import "SceneDetailViewController.h"
+#import <objc/message.h>
 @interface MelTravelTableViewController ()
 
 @end
@@ -62,6 +63,12 @@
             {
                 if([segue.destinationViewController isKindOfClass:[SceneDetailViewController class]])
                 {
+                    if(UIDeviceOrientationIsLandscape(self.interfaceOrientation)){
+                        if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)])
+                        {
+                            objc_msgSend([UIDevice currentDevice], @selector(setOrientation:), UIInterfaceOrientationPortrait ); //if the table view is landscape, then set the device to portrait because SceneDetailView just support portrait. need to call a runtime library
+                        }
+                    }
                     [self prepareSceneDetailVC:segue.destinationViewController toScene:self.scenes[indexPath.row]];
                 }
             }
