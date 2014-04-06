@@ -1,6 +1,6 @@
 //
 //  NavController.h
-//  MelbournTravel
+//  MelbourneTravel
 //
 //  Created by WangQionghua on 5/04/2014.
 //  Copyright (c) 2014 WangQionghua. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  MelTravelTableViewController.m
-//  MelbournTravel
+//  MelbourneTravel
 //
 //  Created by WangQionghua on 4/04/2014.
 //  Copyright (c) 2014 WangQionghua. All rights reserved.
@@ -66,10 +66,12 @@
                     if(UIDeviceOrientationIsLandscape(self.interfaceOrientation)){
                         if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)])
                         {
-                            //[[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait animated:NO];
+                          
+                            //if the table view is landscape, then set the device to portrait because SceneDetailView just support portrait. need to call a runtime library
                             NSLog(@"%@",[[UIDevice currentDevice] name]);
                             NSLog(@"%ld", self.interfaceOrientation );
-                            objc_msgSend([UIDevice currentDevice], @selector(setOrientation:), UIInterfaceOrientationPortrait ); //if the table view is landscape, then set the device to portrait because SceneDetailView just support portrait. need to call a runtime library
+                            objc_msgSend([UIDevice currentDevice], @selector(setOrientation:), UIInterfaceOrientationPortrait );
+                            NSLog(@"%ld", self.interfaceOrientation );
                         }
                     }
                     [self prepareSceneDetailVC:segue.destinationViewController toScene:self.scenes[indexPath.row]];
