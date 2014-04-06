@@ -11,15 +11,6 @@
 
 @implementation NavController
 
-//- (BOOL)shouldAutorotate
-//{
-//    id currentViewController = self.topViewController;
-//    
-//    if ([currentViewController isKindOfClass:[SceneDetailViewController class]])
-//        return NO;
-//    
-//    return YES;
-//}
 - (BOOL)shouldAutorotate {
     if (self.topViewController != nil)
         return [self.topViewController shouldAutorotate];

@@ -49,11 +49,11 @@
 
 #pragma mark - Navigation
 
-// In a story board-based application, you will often want to do a little preparation before navigation
+//
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    // Get the SceneDetailViewController using [segue destinationViewController].
+    // Pass the selected object to the SceneDetailViewController.
     if([sender isKindOfClass:[UITableViewCell class]])
     {
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
@@ -66,6 +66,9 @@
                     if(UIDeviceOrientationIsLandscape(self.interfaceOrientation)){
                         if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)])
                         {
+                            //[[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait animated:NO];
+                            NSLog(@"%@",[[UIDevice currentDevice] name]);
+                            NSLog(@"%ld", self.interfaceOrientation );
                             objc_msgSend([UIDevice currentDevice], @selector(setOrientation:), UIInterfaceOrientationPortrait ); //if the table view is landscape, then set the device to portrait because SceneDetailView just support portrait. need to call a runtime library
                         }
                     }

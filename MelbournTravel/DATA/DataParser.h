@@ -8,10 +8,10 @@
 //https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-prn1/t1.0-9/p417x417/534099_10152076227342054_812945626_n.jpg
 #import <Foundation/Foundation.h>
 
-// key (paths) to attractions at scene list
+// key (paths) to attractions/scenes in a data dictionary
 #define SIMPLE_SCENE_LIST @"Scene list"
 
-// keys (paths) to values in a scene dictionary
+// keys to values in a scene dictionary
 #define SCENE_ID @"id"
 #define SCENE_TITLE @"name"
 #define SCENE_DESCRIPTION @"brief"
@@ -20,21 +20,22 @@
 #define SCENE_OPEN_HOUR @"open_hour"
 #define SCENE_TICKET @"ticket"
 #define SCENE_PHONE @"phone"
-//Define Data Source type--from internet:DS_NETWORK or from local json file:DS_LOCAL_FILE
-// The data Source of the app for initialization.
+//The data Source for initialization.
+//Define Data Source type--1.from internet:DS_NETWORK or 2.from local json file:DS_LOCAL_FILE
+
 enum {
     DS_LOCAL_FILE  = 1,
     DS_NETWORK     = 2,
     DS_AUTO        = 3
 };
 typedef NSUInteger AppInitDataSource;
-//#define APP_INIT_DATASOURCE   DS_NETWORK
+
 #define APP_INIT_DATASOURCE   DS_LOCAL_FILE
 
 @interface DataParser : NSObject
 
 @property (strong, nonatomic) NSArray *scenes;
-//Just need to parse the data one time
+//create only a single instance
 +(id)shareInstance;
 
 @end

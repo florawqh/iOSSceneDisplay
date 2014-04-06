@@ -8,7 +8,7 @@
 
 #import "SceneDetailViewController.h"
 #import "DataParser.h"
-
+#import <objc/message.h>
 @interface SceneDetailViewController ()<UIScrollViewDelegate>
 @property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -19,7 +19,7 @@
 
 @implementation SceneDetailViewController
 #pragma mark - Properties
-//property scene's set method, update image view and text view
+//properties' set and get methods.
 - (void)setScene:(NSDictionary *)scene
 {
     if(scene.count)
@@ -27,7 +27,7 @@
         _scene = scene;
         NSURL *imageURL =[NSURL URLWithString:[scene objectForKey:SCENE_LINK]];
         [self startDownloadingImage:imageURL];
-        [self updateUI];
+        //[self updateUI];
     }
 }
 - (UIImageView *)imageView
@@ -47,53 +47,32 @@
 - (void)setImage:(UIImage *)image
 {
 
+    self.imageView.image = image;
     if(image)
     {
-        self.imageView.image = image;
         [self.indicator stopAnimating];
         
     }
-    else
-    {
-        self.imageView.image = [UIImage imageNamed:@"imageBackground"];
-        [self.indicator stopAnimating];
-    }
 }
 #pragma mark - UI
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    
-}
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO];
-    [self updateUI];
+    [self updateTextUI];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(userFontsChanged:)
                                                  name:UIContentSizeCategoryDidChangeNotification
                                                object:nil];
 }
-
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     [[NSNotificationCenter defaultCenter] removeObserver:self
                                                     name:UIContentSizeCategoryDidChangeNotification
                                                   object:nil];
-
-}
-- (void)updateUI
+    }
+- (void)updateTextUI
 {
     
     NSAttributedString *attributedText = [self attributedTextViewString];
@@ -142,7 +121,7 @@
 {
     [self setAttributedTextWithUserFonts];
 }
-//the "mark" button can help user to set the whole scene description that they selected or highlight/defualt the
+//The "mark" button can help user to set the whole scene description that they selected or highlight/defualt the
 - (IBAction)highlightSelectedText:(UIBarButtonItem *)sender
 {
     NSRange range;
@@ -165,12 +144,14 @@
     {
         [self setAttributedTextHighlight:range];
     }
+    self.textView.selectedTextRange=nil;
 }
+//Use system default text font in UITextView
 - (void)setAttributedTextWithUserFonts
 {
     self.textView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
 }
-//Highlighted text settings:blue stroke color
+//Highlighted text settings:outlined
 - (void)setAttributedTextHighlight:(NSRange)range
 {
     [self.textView.textStorage addAttributes:@{
@@ -186,9 +167,7 @@
                                        range:range];//,NSForegroundColorAttributeName:[UIColor blackColor]
 }
 #pragma mark - Setting the Image from the Image's URL
-
-
-//download image from URL by async way
+//Download image from URL by async way
 - (void)startDownloadingImage:(NSURL *)imageURL
 {
     self.image = nil;
@@ -211,17 +190,17 @@
     }
 }
 #pragma mark - Rotation
-//Disable screen rotation
-- (BOOL)shouldAutorotate
-{
-    return NO;
-}
+//Disable screen rotation for this view
+//- (BOOL)shouldAutorotate
+//{
+//    return NO;
+//}
+//Garrantee portrait on this view
 - (NSUInteger)supportedInterfaceOrientations{
-    return UIInterfaceOrientationPortrait;
+    return UIInterfaceOrientationMaskPortrait;
 }
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
     return UIInterfaceOrientationPortrait;
-    //return [super preferredInterfaceOrientationForPresentation];
 }
 
 

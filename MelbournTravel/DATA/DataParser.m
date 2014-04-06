@@ -7,11 +7,12 @@
 //  This Class is used to process Data source from json file.
 
 #import "DataParser.h"
-//Sington instance
-static DataParser *model=nil;
+//A static variable guarantees there is only one instance for this class
+static DataParser *model;
 
 @implementation DataParser
 
+//create a new instance if there isn't one yet, otherwise return the existing instance
 +(id)shareInstance
 {
     @synchronized([DataParser class])

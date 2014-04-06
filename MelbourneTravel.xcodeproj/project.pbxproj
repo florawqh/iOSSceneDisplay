@@ -40,21 +40,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6DA1A0AD18EE398D0002EBD2 /* MelbournTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelbournTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA1A0AD18EE398D0002EBD2 /* MelbourneTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MelbourneTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA1A0B018EE398D0002EBD2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6DA1A0B218EE398D0002EBD2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6DA1A0B418EE398D0002EBD2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6DA1A0B818EE398D0002EBD2 /* MelbournTravel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MelbournTravel-Info.plist"; sourceTree = "<group>"; };
+		6DA1A0B818EE398D0002EBD2 /* MelbourneTravel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MelbourneTravel-Info.plist"; sourceTree = "<group>"; };
 		6DA1A0BA18EE398D0002EBD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DA1A0BC18EE398D0002EBD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6DA1A0BE18EE398D0002EBD2 /* MelbournTravel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MelbournTravel-Prefix.pch"; sourceTree = "<group>"; };
+		6DA1A0BE18EE398D0002EBD2 /* MelbourneTravel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MelbourneTravel-Prefix.pch"; sourceTree = "<group>"; };
 		6DA1A0BF18EE398D0002EBD2 /* MelTravelAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MelTravelAppDelegate.h; sourceTree = "<group>"; };
 		6DA1A0C018EE398D0002EBD2 /* MelTravelAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MelTravelAppDelegate.m; sourceTree = "<group>"; };
 		6DA1A0C318EE398D0002EBD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		6DA1A0CB18EE398D0002EBD2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6DA1A0D118EE398E0002EBD2 /* MelbournTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelbournTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA1A0D118EE398E0002EBD2 /* MelbourneTravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MelbourneTravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA1A0D218EE398E0002EBD2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6DA1A0DA18EE398E0002EBD2 /* MelbournTravelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MelbournTravelTests-Info.plist"; sourceTree = "<group>"; };
+		6DA1A0DA18EE398E0002EBD2 /* MelbourneTravelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MelbourneTravelTests-Info.plist"; sourceTree = "<group>"; };
 		6DA1A0DC18EE398E0002EBD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DA1A0DE18EE398E0002EBD2 /* MelbournTravelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MelbournTravelTests.m; sourceTree = "<group>"; };
 		6DA1A0E818EE3DF80002EBD2 /* MelTravelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MelTravelTableViewController.h; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				6DA1A10018EFE9740002EBD2 /* readme.txt */,
-				6DA1A0B618EE398D0002EBD2 /* MelbournTravel */,
-				6DA1A0D818EE398E0002EBD2 /* MelbournTravelTests */,
+				6DA1A0B618EE398D0002EBD2 /* MelbourneTravel */,
+				6DA1A0D818EE398E0002EBD2 /* MelbourneTravelTests */,
 				6DA1A0AF18EE398D0002EBD2 /* Frameworks */,
 				6DA1A0AE18EE398D0002EBD2 /* Products */,
 			);
@@ -109,8 +109,8 @@
 		6DA1A0AE18EE398D0002EBD2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6DA1A0AD18EE398D0002EBD2 /* MelbournTravel.app */,
-				6DA1A0D118EE398E0002EBD2 /* MelbournTravelTests.xctest */,
+				6DA1A0AD18EE398D0002EBD2 /* MelbourneTravel.app */,
+				6DA1A0D118EE398E0002EBD2 /* MelbourneTravelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6DA1A0B618EE398D0002EBD2 /* MelbournTravel */ = {
+		6DA1A0B618EE398D0002EBD2 /* MelbourneTravel */ = {
 			isa = PBXGroup;
 			children = (
 				6DA1A0C218EE398D0002EBD2 /* Main_iPhone.storyboard */,
@@ -138,39 +138,41 @@
 				6DA1A0EC18EE3F850002EBD2 /* SceneTableViewController.m */,
 				6DA1A0EE18EE4E8E0002EBD2 /* SceneDetailViewController.h */,
 				6DA1A0EF18EE4E8E0002EBD2 /* SceneDetailViewController.m */,
-				6DA1A0CB18EE398D0002EBD2 /* Images.xcassets */,
 				6DA1A0F318EE677A0002EBD2 /* Data */,
 				6DA1A0B718EE398D0002EBD2 /* Supporting Files */,
 			);
+			name = MelbourneTravel;
 			path = MelbournTravel;
 			sourceTree = "<group>";
 		};
 		6DA1A0B718EE398D0002EBD2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6DA1A0CB18EE398D0002EBD2 /* Images.xcassets */,
 				6DA1A0BF18EE398D0002EBD2 /* MelTravelAppDelegate.h */,
 				6DA1A0C018EE398D0002EBD2 /* MelTravelAppDelegate.m */,
-				6DA1A0B818EE398D0002EBD2 /* MelbournTravel-Info.plist */,
+				6DA1A0B818EE398D0002EBD2 /* MelbourneTravel-Info.plist */,
 				6DA1A0B918EE398D0002EBD2 /* InfoPlist.strings */,
 				6DA1A0BC18EE398D0002EBD2 /* main.m */,
-				6DA1A0BE18EE398D0002EBD2 /* MelbournTravel-Prefix.pch */,
+				6DA1A0BE18EE398D0002EBD2 /* MelbourneTravel-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6DA1A0D818EE398E0002EBD2 /* MelbournTravelTests */ = {
+		6DA1A0D818EE398E0002EBD2 /* MelbourneTravelTests */ = {
 			isa = PBXGroup;
 			children = (
 				6DA1A0DE18EE398E0002EBD2 /* MelbournTravelTests.m */,
 				6DA1A0D918EE398E0002EBD2 /* Supporting Files */,
 			);
+			name = MelbourneTravelTests;
 			path = MelbournTravelTests;
 			sourceTree = "<group>";
 		};
 		6DA1A0D918EE398E0002EBD2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6DA1A0DA18EE398E0002EBD2 /* MelbournTravelTests-Info.plist */,
+				6DA1A0DA18EE398E0002EBD2 /* MelbourneTravelTests-Info.plist */,
 				6DA1A0DB18EE398E0002EBD2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -189,9 +191,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6DA1A0AC18EE398D0002EBD2 /* MelbournTravel */ = {
+		6DA1A0AC18EE398D0002EBD2 /* MelbourneTravel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DA1A0E218EE398E0002EBD2 /* Build configuration list for PBXNativeTarget "MelbournTravel" */;
+			buildConfigurationList = 6DA1A0E218EE398E0002EBD2 /* Build configuration list for PBXNativeTarget "MelbourneTravel" */;
 			buildPhases = (
 				6DA1A0A918EE398D0002EBD2 /* Sources */,
 				6DA1A0AA18EE398D0002EBD2 /* Frameworks */,
@@ -201,14 +203,14 @@
 			);
 			dependencies = (
 			);
-			name = MelbournTravel;
+			name = MelbourneTravel;
 			productName = MelbournTravel;
-			productReference = 6DA1A0AD18EE398D0002EBD2 /* MelbournTravel.app */;
+			productReference = 6DA1A0AD18EE398D0002EBD2 /* MelbourneTravel.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6DA1A0D018EE398E0002EBD2 /* MelbournTravelTests */ = {
+		6DA1A0D018EE398E0002EBD2 /* MelbourneTravelTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6DA1A0E518EE398E0002EBD2 /* Build configuration list for PBXNativeTarget "MelbournTravelTests" */;
+			buildConfigurationList = 6DA1A0E518EE398E0002EBD2 /* Build configuration list for PBXNativeTarget "MelbourneTravelTests" */;
 			buildPhases = (
 				6DA1A0CD18EE398E0002EBD2 /* Sources */,
 				6DA1A0CE18EE398E0002EBD2 /* Frameworks */,
@@ -219,9 +221,9 @@
 			dependencies = (
 				6DA1A0D718EE398E0002EBD2 /* PBXTargetDependency */,
 			);
-			name = MelbournTravelTests;
+			name = MelbourneTravelTests;
 			productName = MelbournTravelTests;
-			productReference = 6DA1A0D118EE398E0002EBD2 /* MelbournTravelTests.xctest */;
+			productReference = 6DA1A0D118EE398E0002EBD2 /* MelbourneTravelTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -234,12 +236,15 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = WangQionghua;
 				TargetAttributes = {
+					6DA1A0AC18EE398D0002EBD2 = {
+						DevelopmentTeam = RBK7C6F69P;
+					};
 					6DA1A0D018EE398E0002EBD2 = {
 						TestTargetID = 6DA1A0AC18EE398D0002EBD2;
 					};
 				};
 			};
-			buildConfigurationList = 6DA1A0A818EE398D0002EBD2 /* Build configuration list for PBXProject "MelbournTravel" */;
+			buildConfigurationList = 6DA1A0A818EE398D0002EBD2 /* Build configuration list for PBXProject "MelbourneTravel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -252,8 +257,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6DA1A0AC18EE398D0002EBD2 /* MelbournTravel */,
-				6DA1A0D018EE398E0002EBD2 /* MelbournTravelTests */,
+				6DA1A0AC18EE398D0002EBD2 /* MelbourneTravel */,
+				6DA1A0D018EE398E0002EBD2 /* MelbourneTravelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -309,7 +314,7 @@
 /* Begin PBXTargetDependency section */
 		6DA1A0D718EE398E0002EBD2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6DA1A0AC18EE398D0002EBD2 /* MelbournTravel */;
+			target = 6DA1A0AC18EE398D0002EBD2 /* MelbourneTravel */;
 			targetProxy = 6DA1A0D618EE398E0002EBD2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -423,9 +428,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MelbournTravel/MelbournTravel-Prefix.pch";
-				INFOPLIST_FILE = "MelbournTravel/MelbournTravel-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MelbournTravel/MelbourneTravel-Prefix.pch";
+				INFOPLIST_FILE = "MelbournTravel/MelbourneTravel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = MelbourneTravel;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -438,9 +444,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MelbournTravel/MelbournTravel-Prefix.pch";
-				INFOPLIST_FILE = "MelbournTravel/MelbournTravel-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MelbournTravel/MelbourneTravel-Prefix.pch";
+				INFOPLIST_FILE = "MelbournTravel/MelbourneTravel-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = MelbourneTravel;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -462,8 +469,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MelbournTravelTests/MelbournTravelTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MelbournTravelTests/MelbourneTravelTests-Info.plist";
+				PRODUCT_NAME = MelbourneTravelTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -481,8 +488,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MelbournTravel/MelbournTravel-Prefix.pch";
-				INFOPLIST_FILE = "MelbournTravelTests/MelbournTravelTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MelbournTravelTests/MelbourneTravelTests-Info.plist";
+				PRODUCT_NAME = MelbourneTravelTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -491,7 +498,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6DA1A0A818EE398D0002EBD2 /* Build configuration list for PBXProject "MelbournTravel" */ = {
+		6DA1A0A818EE398D0002EBD2 /* Build configuration list for PBXProject "MelbourneTravel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DA1A0E018EE398E0002EBD2 /* Debug */,
@@ -500,21 +507,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DA1A0E218EE398E0002EBD2 /* Build configuration list for PBXNativeTarget "MelbournTravel" */ = {
+		6DA1A0E218EE398E0002EBD2 /* Build configuration list for PBXNativeTarget "MelbourneTravel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DA1A0E318EE398E0002EBD2 /* Debug */,
 				6DA1A0E418EE398E0002EBD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		6DA1A0E518EE398E0002EBD2 /* Build configuration list for PBXNativeTarget "MelbournTravelTests" */ = {
+		6DA1A0E518EE398E0002EBD2 /* Build configuration list for PBXNativeTarget "MelbourneTravelTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DA1A0E618EE398E0002EBD2 /* Debug */,
 				6DA1A0E718EE398E0002EBD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
