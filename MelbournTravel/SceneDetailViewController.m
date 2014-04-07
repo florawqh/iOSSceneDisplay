@@ -121,14 +121,23 @@
                                      initWithString:[self.scene valueForKey:SCENE_DESCRIPTION] attributes:@{NSForegroundColorAttributeName:[UIColor grayColor]}];
 
     [paragraph appendAttributedString:briefText];
-   // [paragraph appendAttributedString:anotherAttributedString];
+    //check image link
     
+    [paragraph addAttribute:NSLinkAttributeName
+                      value:[self.scene objectForKey:SCENE_LINK]
+                             range:[[paragraph string] rangeOfString:@"Check more photos"]];
+    NSDictionary *linkAttributes = @{NSForegroundColorAttributeName: [UIColor greenColor],
+                                     NSUnderlineColorAttributeName: [UIColor lightGrayColor],
+                                     NSUnderlineStyleAttributeName: @(NSUnderlinePatternSolid)};
+    
+    self.textView.linkTextAttributes = linkAttributes; // customizes the appearance of links
     return [paragraph copy];
 }
 - (void)userFontsChanged:(NSNotification *)notification
 {
     [self setAttributedTextWithUserFonts];
 }
+
 //The "mark" button can help user to set the whole scene description that they selected or highlight/defualt the
 - (IBAction)highlightSelectedText:(UIBarButtonItem *)sender
 {
