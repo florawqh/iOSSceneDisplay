@@ -65,6 +65,12 @@
                                                  name:UIContentSizeCategoryDidChangeNotification
                                                object:nil];
 }
+-(void) viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    objc_msgSend([UIDevice currentDevice], @selector(setOrientation:), UIInterfaceOrientationPortrait );
+
+}
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
