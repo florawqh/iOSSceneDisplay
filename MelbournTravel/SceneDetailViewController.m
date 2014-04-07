@@ -59,16 +59,18 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:NO];
-    [self updateTextUI];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(userFontsChanged:)
                                                  name:UIContentSizeCategoryDidChangeNotification
                                                object:nil];
+    
 }
 -(void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     objc_msgSend([UIDevice currentDevice], @selector(setOrientation:), UIInterfaceOrientationPortrait );
+    [self updateTextUI];
 
 }
 - (void)viewWillDisappear:(BOOL)animated

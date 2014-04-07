@@ -62,15 +62,9 @@
             if([segue.identifier isEqualToString:@"Scene Cell Segue"])
             {
                 if([segue.destinationViewController isKindOfClass:[SceneDetailViewController class]])
-                {
-                    if(UIDeviceOrientationIsLandscape(self.interfaceOrientation)){
-                        if ([[UIDevice currentDevice] respondsToSelector:@selector(setOrientation:)])
-                        {
-                            //if the table view is landscape, then set the device to portrait because SceneDetailView just support portrait. need to call a runtime library
-                           // objc_msgSend([UIDevice currentDevice], @selector(setOrientation:), UIInterfaceOrientationPortrait );
-                        }
-                    }
+                { 
                     [self prepareSceneDetailVC:segue.destinationViewController toScene:self.scenes[indexPath.row]];
+                    
                 }
             }
         }
