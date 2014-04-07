@@ -30,7 +30,35 @@ static DataParser *model;
 {
     [self initAllDestinationData:APP_INIT_DATASOURCE];
 }
-
+-(void) initAllDestinationDataAsync:(AppInitDataSource)source
+{
+    
+    if ((source == DS_LOCAL_FILE) || (source == DS_AUTO))
+    {
+        NSError *error = nil;
+        NSString *textFileContents = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"MelScene" ofType:@"json"] encoding:NSUTF8StringEncoding error:&error];
+        dispatch_queue_t parseQ= dispatch_queue_create("data parser", NULL);
+        dispatch_async(parseQ, ^{
+            
+            NSData *jsonData = [textFileContents dataUsingEncoding:NSUTF8StringEncoding];
+            NSDictionary *fileDict = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:NULL];
+            if (!fileDict)
+            {
+                NSLog(@"JSON parser failed");
+                return;
+            }
+            // Data file dictionary (top-level)
+            if (![fileDict isKindOfClass:[NSDictionary class]]) {
+                NSLog(@"JSON parser hasn't returned a NSDictionary.");
+                return;
+            }
+            NSArray *scenes = [fileDict valueForKeyPath:SIMPLE_SCENE_LIST];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.scenes = scenes;
+            });
+        });
+    }
+}
 -(void) initAllDestinationData:(AppInitDataSource)source
 {
     NSError *error;

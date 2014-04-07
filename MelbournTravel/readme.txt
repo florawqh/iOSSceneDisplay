@@ -4,7 +4,7 @@
 //  Copyright (c) 2014 WangQionghua. All rights reserved.
 //
 
-MelbourneTravel is a travel application demo based a China travel application that I developed for a previous project.
+MelbourneTravel is a travel application demo based on a China travel application that I developed for a previous project.
 
 This application can:
 1.Read Json files and parse Json data.
