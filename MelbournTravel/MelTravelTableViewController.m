@@ -46,6 +46,19 @@
     cell.detailTextLabel.text = [scene valueForKey:SCENE_TAG];
     return cell;
 }
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    id detail = self.splitViewController.viewControllers[1];
+    if([detail isKindOfClass:[UINavigationController class]])
+    {
+        detail = [((UINavigationController *)detail).viewControllers firstObject];
+        if([detail isKindOfClass:[SceneDetailViewController class]])
+        {
+            [self prepareSceneDetailVC:detail toScene:self.scenes[indexPath.row]];
+        }
+    }
+}
 
 #pragma mark - Navigation
 

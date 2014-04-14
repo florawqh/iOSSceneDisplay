@@ -27,6 +27,7 @@
 		6DA1A0F618EE6A180002EBD2 /* DataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1A0F518EE6A180002EBD2 /* DataParser.m */; };
 		6DA1A0FF18EFC9630002EBD2 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA1A0FE18EFC9630002EBD2 /* NavController.m */; };
 		6DA1A10118EFE9740002EBD2 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6DA1A10018EFE9740002EBD2 /* readme.txt */; };
+		6DA1A15118FB6A6E0002EBD2 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA1A14F18FB6A6E0002EBD2 /* Main_iPad.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		6DA1A0FD18EFC9630002EBD2 /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
 		6DA1A0FE18EFC9630002EBD2 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
 		6DA1A10018EFE9740002EBD2 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = readme.txt; path = MelbournTravel/readme.txt; sourceTree = "<group>"; };
+		6DA1A15018FB6A6E0002EBD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				6DA1A0C218EE398D0002EBD2 /* Main_iPhone.storyboard */,
+				6DA1A14F18FB6A6E0002EBD2 /* Main_iPad.storyboard */,
 				6DA1A0FD18EFC9630002EBD2 /* NavController.h */,
 				6DA1A0FE18EFC9630002EBD2 /* NavController.m */,
 				6DA1A0E818EE3DF80002EBD2 /* MelTravelTableViewController.h */,
@@ -273,6 +276,7 @@
 				6DA1A0C418EE398D0002EBD2 /* Main_iPhone.storyboard in Resources */,
 				6DA1A0BB18EE398D0002EBD2 /* InfoPlist.strings in Resources */,
 				6DA1A0F218EE662B0002EBD2 /* MelScene.json in Resources */,
+				6DA1A15118FB6A6E0002EBD2 /* Main_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +346,14 @@
 				6DA1A0DC18EE398E0002EBD2 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6DA1A14F18FB6A6E0002EBD2 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DA1A15018FB6A6E0002EBD2 /* Base */,
+			);
+			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -430,9 +442,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MelbournTravel/MelbourneTravel-Prefix.pch";
 				INFOPLIST_FILE = "MelbournTravel/MelbourneTravel-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = MelbourneTravel;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -446,9 +458,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MelbournTravel/MelbourneTravel-Prefix.pch";
 				INFOPLIST_FILE = "MelbournTravel/MelbourneTravel-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = MelbourneTravel;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -20,7 +20,7 @@
 	[self refreshData];
 }
 //fetch scene data from model
--(IBAction)parseScenes
+-(void)parseScenes
 {
 //#warning:Simplified here. If need to fetch the data from internet or database, then add refreshControl, replace with other data fetch methods and use another quese to not block the main thread
     DataParser *model = [DataParser shareInstance];

@@ -9,7 +9,7 @@
 #import "SceneDetailViewController.h"
 #import "DataParser.h"
 #import <objc/message.h>
-@interface SceneDetailViewController ()<UIScrollViewDelegate>
+@interface SceneDetailViewController ()<UIScrollViewDelegate, UISplitViewControllerDelegate>
 @property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) IBOutlet UITextView *textView;
@@ -27,7 +27,7 @@
         _scene = scene;
         NSURL *imageURL =[NSURL URLWithString:[scene objectForKey:SCENE_LINK]];
         [self startDownloadingImage:imageURL];
-        //[self updateUI];
+        [self updateTextUI];
     }
 }
 - (UIImageView *)imageView
@@ -58,7 +58,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.navigationController setNavigationBarHidden:NO];
+   // [self.navigationController setNavigationBarHidden:NO];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(userFontsChanged:)
@@ -92,6 +92,7 @@
 //Generate attributedString from "Scene" dictionary
 - (NSAttributedString *)attributedTextViewString
 {
+    if(!self.scene.count) return nil;
     //also can storage the list and dictionary at DataParser or configuation file
     NSArray *displayList = @[SCENE_OPEN_HOUR,SCENE_TICKET,SCENE_PHONE];
     NSDictionary *displayTitle = @{SCENE_TITLE:@"",SCENE_OPEN_HOUR:@"Open Hour:",SCENE_TICKET:@"Ticket:",SCENE_PHONE:@"Contact:",SCENE_DESCRIPTION:@"",SCENE_TAG:@"Tag:"};
@@ -205,6 +206,25 @@
                                                         }];
         [task resume]; // NSURLSession tasks start
     }
+}
+
+#pragma mark - UISplitViewControllerDelegate
+- (void)awakeFromNib
+{
+    self.splitViewController.delegate = self;
+}
+-(BOOL)splitViewController:(UISplitViewController *)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation
+{
+    return UIInterfaceOrientationIsPortrait(orientation);
+}
+-(void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc
+{
+    barButtonItem.title = aViewController.title;
+    self.navigationItem.leftBarButtonItem = barButtonItem;
+}
+-(void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+    self.navigationItem.leftBarButtonItem = nil;
 }
 #pragma mark - Rotation
 //Disable screen rotation for this view
