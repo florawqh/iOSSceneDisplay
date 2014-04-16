@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Route" representedClassName="Route" syncable="YES">
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sceneList" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="tag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="scenes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scene" inverseName="whichRoute" inverseEntity="Scene" syncable="YES"/>
+    </entity>
+    <entity name="Scene" representedClassName="Scene" syncable="YES">
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagelink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="openhour" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ticket" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="traffic" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="whichRoute" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Route" inverseName="scenes" inverseEntity="Route" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Scene" positionX="160" positionY="192" width="128" height="178"/>
+        <element name="Route" positionX="385" positionY="198" width="128" height="118"/>
+    </elements>
+</model>
